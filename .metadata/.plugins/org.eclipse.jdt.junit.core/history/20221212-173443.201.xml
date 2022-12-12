@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FetchJeepTest" project="jeep-sales" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.promineotech.jeep.controller.FetchJeepTest" time="2.812" displayname="FetchJeepTest" uniqueid="[engine:junit-jupiter]/[class:com.promineotech.jeep.controller.FetchJeepTest]">
+    <testcase name="testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied" classname="com.promineotech.jeep.controller.FetchJeepTest" time="2.812" displayname="testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied()" uniqueid="[engine:junit-jupiter]/[class:com.promineotech.jeep.controller.FetchJeepTest]/[method:testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied()]"/>
+  </testsuite>
+</testrun>

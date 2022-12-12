@@ -10,4 +10,7 @@
     <fullyQualifiedTypeName name="com.promineotech.jeep.entity.JeepModel"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.promineotech.jeep.entity.Jeep"/>
+    <fullyQualifiedTypeName name="com.promineotech.jeep.dao.JeepSalesDao"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 </qualifiedTypeNameHistroy>
