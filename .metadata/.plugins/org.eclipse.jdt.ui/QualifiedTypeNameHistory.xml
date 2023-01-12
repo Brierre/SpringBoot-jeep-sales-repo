@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="com.promineotech.jeep.dao.JeepSalesDao"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+    <fullyQualifiedTypeName name="com.promineotech.jeep.entity.Order"/>
 </qualifiedTypeNameHistroy>

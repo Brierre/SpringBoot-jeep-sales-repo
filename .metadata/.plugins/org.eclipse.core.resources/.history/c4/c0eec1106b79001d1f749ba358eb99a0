@@ -1,5 +1,0 @@
-package com.promineotech.jeep.dao;
-
-public interface JeepSalesDao {
-
-}
