@@ -1,0 +1,53 @@
+package com.promineotech.jeep.controller;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.jdbc.Sql;
+import org.springframework.test.context.jdbc.SqlConfig;
+
+import lombok.Getter;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@ActiveProfiles("test")
+@Sql(
+    scripts = {"classpath:flyway/migrations/V1.0__Jeep_Schema.sql", 
+        "classpath:flyway/migrations/V1.1__Jeep_Data.sql"},
+    config = @SqlConfig(encoding = "utf-8"))
+
+class CreateOrderTest {
+	@LocalServerPort
+	private int serverPort;
+	@Autowired
+	@Getter
+	private TestRestTemplate restTemplate;	
+	
+	@Test
+	void testCreateOrderReturnsSuccess201() {
+		
+		String body = createOrderBody();
+	}
+
+	private String createOrderBody() {
+		// @formatter:off
+	    return "{\n"
+	        + "  \"customer\":\"ROTH_GARTH\",\n"
+	        + "  \"model\":\"COMPASS\",\n"
+	        + "  \"trim\":\"Sport\",\n"
+	        + "  \"doors\":4,\n"
+	        + "  \"color\":\"EXT_ALPINE_WHITE\",\n"
+	        + "  \"engine\":\"2_4_GAS\",\n"
+	        + "  \"tire\":\"225_MICHELIN\",\n"
+	        + "  \"options\":[\n"
+	        + "     \"EXT_MOPAR_TRAILER\",\n"
+	        + "     \"EXT_SMITTY_RACK\"\n"
+	        + "  ]\n"
+	        + "}";
+	    // @formatter:on
+	}
+
+}

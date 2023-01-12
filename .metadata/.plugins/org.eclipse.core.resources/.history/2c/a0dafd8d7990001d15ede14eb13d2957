@@ -1,0 +1,14 @@
+package com.promineotech.jeep.controller;
+
+import com.promineotech.jeep.entity.Order;
+import com.promineotech.jeep.entity.OrderRequest;
+
+public class DefaultJeepOrderController implements JeepOrderController {
+
+	@Override
+	public Order createOrder(OrderRequest orderRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

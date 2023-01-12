@@ -1,0 +1,8 @@
+package com.promineotech.jeep.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DefaultJeepOrderDao implements JeepOrderDao {
+
+}
